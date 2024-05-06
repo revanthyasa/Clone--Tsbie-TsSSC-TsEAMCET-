@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            color: blue;
+            box-shadow:4px 4px 8px 4px #309be233, 4px 6px 20px 4px rgba(101, 128, 227, 0.19);
+            
+        }
+        .point{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body align="center">
+    <div style="width:1000px;height:300px;margin-left: 17%;border:2px solid gainsboro">
+        <h2 style="color: white;background-color: deeppink;">PRINT TS EAMCET -2023 HALL TICKET</h2>
+        <table cellspacing="20px">
+            <tr>
+                <td style="vertical-align:top"><b>Registration Number</b></td>
+                <td style="vertical-align:top"><b>Eamcet Hall Ticket No.</b></td>
+                <td style="vertical-align:top"><b>Date of Birth</b></td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top"><input type="text" placeholder="Enter Registration Number" style="width:300px;" id="regnum"></td>
+                <td style="vertical-align:top"><input type="text" placeholder="Enter Eamcet Hall Ticket No" style="width:300px" id="hall"></td>
+                <td style="vertical-align:top"><input type="date" style="width:300px" id="dob"></td>
+            </tr>
+        </table>
+        <button style="color:white;background-color: orangered;" onclick="solution()" class="point"><b>Get Hall Ticket</b></button>
+        <p style="color:red" id="show"></p>
+    </div>
+</body>
+<script>
+function solution(){
+    var r=document.getElementById('regnum').value
+    var h=document.getElementById('hall').value
+    var d=document.getElementById('dob')
+    var m='/^210d{4}$/'
+    // if(r=='' || m.test(r)==false){
+    //     alert("Please Enter Valid Registration Number")
+    //     return false
+    // }
+    // // else if(!r.match('/^210d{4}$/')){
+    // //     alert("Please Enter Valid Registration Number")
+    // //     return false
+    // // }
+    // if(d==''){
+    //     alert("Please Enter Date Of Birth")
+    //     return false
+    // }
+
+    
+}
+</script>
+</html>

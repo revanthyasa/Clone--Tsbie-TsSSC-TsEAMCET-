@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSBIE SERVICES</title>
+    <style>
+        .button{
+            background-color: green;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            height: 40px;
+            width: 80px;
+            cursor: pointer;
+        }
+        .button:hover {background-color: darkgreen;}
+        .pointer{
+            cursor: pointer;
+        }
+        .pointer:hover{
+            background-color: darkviolet;
+        }
+        button{
+            color: white;
+            background-color:blueviolet;
+            border: 2px;
+        }
+        li{color: white;}
+    </style>
+    <script>
+        function knas(){
+            window.open("Know Your application.html")
+        }
+        function home(){
+            window.open("intermain.html")
+        }
+        function aboutus(){
+            window.open("about us.html")
+        }
+        function sos(){
+            window.open("migration certi.html")
+        }
+        function rvrc(){
+            window.open("rvrc.html")
+        }
+        function intercontact(){
+            window.open("intercontactus.html")
+        }
+        function hallvalidate(){
+        var f=document.getElementById("hall").value
+        var m=/^232310\d{4}$/
+        if (m.test(f)){
+            document.getElementById('tick').innerHTML='VALID HALL TICKET NUMBER'
+        }
+        else{
+            document.getElementById('tick').innerHTML='INVALID HALL TICKET NUMBER'
+        }
+        }
+    </script>
+</head>
+<body align="center">
+    <div style="height: 5%;background-color: darkgray;" align="center">
+        <button class="pointer" style="color:white;background-color: dimgrey;border-style:outset;border-color: azure;height: 30px;">Login</button>
+    </div>
+    <div style="height:10%;background-color:cornflowerblue">
+        <table>
+            <tr>
+                <td>
+                    <img src="Screenshot 2023-05-21 121111.png" style="width:70px;border-radius: 50%;"></td>
+                    <td><h4>Telangana State Board of Intermediate Education <p></p> Government of Telangana</h4></td>
+                    <td><img src="Screenshot 2023-05-21 235646.png" style="width:70px;border-radius:50%">
+                </td>
+                <td><figure style="margin-left: 400px;"><img src="https://tsbie.cgg.gov.in//scannedPhotos/Circulars/cm.jpg" style="width:50px"><figcaption style="color: white;"><b>Sri K.Chandrashekar Rao</b><br>Hon'ble Chief Minister</figcaption></figure></td>
+                <td><figure><img src="https://tsbie.cgg.gov.in//scannedPhotos/Circulars/minister.jpg" style="width:50px"><figcaption style="color:white"><b>Smt P.Sabitha Indra Reddy</b><br>Hon'ble Minister of Education</figcaption></figure></td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: aquamarine;height:7%" align="center">
+        <button style="margin-left:150px;height:30px;" onclick="home()" class="pointer"><b>Home</b></button>
+        <button class="pointer" onclick="aboutus()" style="height:30px"><b>About Us</b></button>
+        <button class="pointer" onclick="sos()" style="height:30px"><b>Student Online Services</b></button>
+        <button class="pointer" onclick="rvrc()" style="height:30px"><b>RVRC Student Application Status</b></button>
+        <button class="pointer" onclick="intercontact()" style="height:30px"><b>Contact Us</b></button>
+        <button class="pointer" onclick="knas()" style="height:30px"><b>Know Your Application Status</b></button></div>
+
+    </div>
+    <h4 style="text-align: center;color:navy;">Migration Certificate</h4>
+    <hr size="3px" width="350px" color="orange"><br>
+    <form align="center">
+        <label style="color:navy;">Enter Hall Ticket No.</label>
+        <input type="text" style="width: 200px;height: 25px;" id="hall"><p id="tick" style="color: red;"></p>
+        <hr size="1px" width="600px" color="grey"><p id="trial"></p>
+        <input type="button" value="Get Data" class="button" onclick="hallvalidate()"><br><br><br><br><br>
+    </form>
+    <p style="margin-left: 200px;" align="left"><b># Candidates who passed IInd year are Eligible.<br>
+    # Applicants please check all the details entered before proceeding to payment. The fee once paid cannot be<br>refunded.<br>
+    # Applicants take the print out of acknowledgement and note the transaction reference number after successful<br>submission
+    of application form for further reference.</b></p>
+    <footer style="background-color: rgb(35, 35, 143);">
+        <div>
+            <table style="margin-left:10%;" cellspacing="50px">
+                <tr>
+                    <td><h4 style="color:cornflowerblue">POLICIES</h4><hr color="cornflowerblue" size="2" width="70px"><p></p><ul align="left"><li>Privacy Policy</li><li>HyperLinking Policy</li><li>CopyRight Policy</li><li>Terms & Conditions</li></ul></td>
+                    <td><h4 style="color:cornflowerblue">QUICK LINKS</h4><hr color="cornflowerblue" size="2" width="90px"><p></p><ul align="left"><li><a href="intermain.html" style="color: white;">Home</a></li><li><a href="about us.html" style="color: white;">About Us</a></li><li>FAQs</li><li>Disclaimer</li></ul></td>
+                    <td><h4 style="color:cornflowerblue">CONTACT US</h4><hr color="cornflowerblue" size="2" width="100px"><p></p><p align="left" style="color:white">For any Queries please mail to<br>
+                        <b>helpdesk-ie[at]telangana[dot]gov[dot]in</b><br>
+                        Contact 040-24600110<br>
+                        (Timings 9:30 AM to 5:30 PM on all Working Days)</p></td>
+                    <td><h4 style="color:cornflowerblue">CONTACT ADDRESS</h4><hr color="cornflowerblue" size="2" width="160px"><p></p><p align="left" style="color: white;">Telangana State Board of Intermediate Education,<br>
+                        Govt. of Telangana,<br>
+                        Vidhyabhavan, Nampally Hyderabad - 500001 <br>
+                        Telangana State, India <br>
+                        Fax: 91-40-24603314 <br>
+                        Email: secy[dot]tsbie[at]gmail[dot]com</p></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        .pointer{
+            cursor: pointer;
+        }
+        button{
+            color: white;
+            background-color:blueviolet;
+            border: 2px;
+        }
+        .myslides{
+            display: none;
+        }
+        li{color: white;}
+    </style>
+    <script>
+        function knas(){
+            window.open("Know Your application.html")
+        }
+        function home(){
+            window.open("intermain.html")
+        }
+        function aboutus(){
+            window.open("about us.html")
+        }
+        function sos(){
+            window.open("migration certi.html")
+        }
+        function rvrc(){
+            window.open("rvrc.html")
+        }
+        function intercontact(){
+            window.open("intercontactus.html")
+        }
+    </script>
+</head>
+<body align="center">
+    <div style="height: 5%;background-color: darkgray;" align="center">
+        <button class="pointer" style="color:white;background-color: dimgrey;border-style:outset;border-color: azure;height: 30px;" onclick="login()">Login</button>
+    </div>
+    <div style="height:10%;background-color:cornflowerblue">
+        <table>
+            <tr>
+                <td>
+                    <img src="Screenshot 2023-05-21 121111.png" style="width:70px;border-radius: 50%;"></td>
+                    <td><h4>Telangana State Board of Intermediate Education <p></p> Government of Telangana</h4></td>
+                    <td><img src="Screenshot 2023-05-21 235646.png" style="width:70px;border-radius:50%">
+                </td>
+                <td><figure style="margin-left: 400px;"><img src="https://tsbie.cgg.gov.in//scannedPhotos/Circulars/cm.jpg" style="width:50px"><figcaption style="color: white;"><b>Sri K.Chandrashekar Rao</b><br>Hon'ble Chief Minister</figcaption></figure></td>
+                <td><figure><img src="https://tsbie.cgg.gov.in//scannedPhotos/Circulars/minister.jpg" style="width:50px"><figcaption style="color:white"><b>Smt P.Sabitha Indra Reddy</b><br>Hon'ble Minister of Education</figcaption></figure></td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: aquamarine;height:7%">
+        <button style="margin-left:150px;height:30px;" onclick="home()" class="pointer"><b>Home</b></button>
+        <button class="pointer" onclick="aboutus()" style="height:30px"><b>About Us</b></button>
+        <button class="pointer" onclick="sos()" style="height:30px"><b>Student Online Services</b></button>
+        <button class="pointer" onclick="rvrc()" style="height:30px"><b>RVRC Student Application Status</b></button>
+        <button class="pointer" onclick="intercontact()" style="height:30px"><b>Contact Us</b></button>
+        <button class="pointer" onclick="knas()" style="height:30px"><b>Know Your Application Status</b></button>
+    </div>
+    <div class="w3-content w3-section" style="max-width:1200px;margin: auto;">
+        <img class="mySlides" src="https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/collegestudent_1200x800.jpg?itok=R0Yriivz" style="width:100%;height:500px">
+        <img class="mySlides" src="https://i.ndtvimg.com/i/2017-02/students-in-campus_650x400_71487388163.jpg" style="width:100%;height:500px">
+        <img class="mySlides" src="https://tsbie.cgg.gov.in/img/slider/slider3.jpg" style="width:100%;height:500px">
+    </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        function login(){
+            
+        }
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <div style="background-color: beige;">
+            <table>
+                <tr>
+                    <td class="pointer" class="pp">
+                        <a href="3clicks_sametable.html"><img src="https://thumbs.dreamstime.com/b/icon-profile-color-red-icon-profile-color-red-circle-color-dark-red-background-color-white-194702099.jpg" style="width:100px;height:100px;border-radius: 50%;margin-left:250px">
+                    </a></td>
+                    <td class="pointer"><h3 style="color:crimson">Student Services</h3></td>
+                    <td class="pointer"><a href="3clicks_sametable.html" style="text-decoration: none;"><h3 style="margin-left: 300px;color: crimson;">33567<br>Total Applications</h3></a></td>
+                    <td class="pointer"><a href="3clicks_sametable.html" style="text-decoration: none;"><h3 style="margin-left: 100px;color: crimson;">1280<br>Disposed Applications</h3></a></td>
+                    <td class="pointer"><a href="3clicks_sametable.html" style="text-decoration: none;"><h3 style="margin-left: 100px;color: crimson;">180<br>Rejected Applications</h3></a></td>
+
+                </tr>
+            </table>
+        </div>
+        <footer style="background-color: rgb(35, 35, 143);">
+            <div>
+                <table style="margin-left:10%;" cellspacing="50px">
+                    <tr>
+                        <td><h4 style="color:cornflowerblue">POLICIES</h4><hr color="cornflowerblue" size="2" width="70px"><p></p><ul align="left"><li>Privacy Policy</li><li>HyperLinking Policy</li><li>CopyRight Policy</li><li>Terms & Conditions</li></ul></td>
+                        <td><h4 style="color:cornflowerblue">QUICK LINKS</h4><hr color="cornflowerblue" size="2" width="90px"><p></p><ul align="left"><li><a href="intermain.html" style="color: white;">Home</a></li><li><a href="about us.html" style="color: white;">About Us</a></li><li>FAQs</li><li>Disclaimer</li></ul></td>
+                        <td><h4 style="color:cornflowerblue">CONTACT US</h4><hr color="cornflowerblue" size="2" width="100px"><p></p><p align="left" style="color:white">For any Queries please mail to<br>
+                            <b>helpdesk-ie[at]telangana[dot]gov[dot]in</b><br>
+                            Contact 040-24600110<br>
+                            (Timings 9:30 AM to 5:30 PM on all Working Days)</p></td>
+                        <td><h4 style="color:cornflowerblue">CONTACT ADDRESS</h4><hr color="cornflowerblue" size="2" width="160px"><p></p><p align="left" style="color: white;">Telangana State Board of Intermediate Education,<br>
+                            Govt. of Telangana,<br>
+                            Vidhyabhavan, Nampally Hyderabad - 500001 <br>
+                            Telangana State, India <br>
+                            Fax: 91-40-24603314 <br>
+                            Email: secy[dot]tsbie[at]gmail[dot]com</p></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+</body>
+</html>

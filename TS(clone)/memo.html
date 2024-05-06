@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+        <div align="center" style="background-color:bisque;">
+            <table>
+                <tr>
+                    <td><img style='width:150px;height:100px;' src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201405/telangana-govt_660_053114102100.jpg "></td>
+                    <td align="center"><p><h3 style="color:deeppink;">DIRECTORATE OF GOVERNMENT EXAMINATIONS :: TELANGANA STATE <br><h4 style="color:deeppink">S.S.C PUBLIC EXAMINATIONS, APRIL - 2023</h4></h3></p><hr></td>
+                </tr>
+            </table>
+            <div style="margin-left: 35%;margin-right: 35%; border: 1px solid black;">
+                <h3 style="font-size: large;background-color: darkorchid;">MARKS MEMO</h3>
+                <label for="rollno"><b> ROLL NUMBER:</b></label>
+                <input type="text" name="RNO" id="demo"><p></p>
+                <button onclick="vali()">Submit</button><p style="color: red;" id="show"></p>
+
+            </div>
+        </div>
+</body>
+<script>
+    function vali(){
+        let a = document.getElementById("demo").value;
+        var m=/^232310\d{4}$/
+        if(!a.match(m)){
+            document.getElementById('show').innerHTML='INVALID HALL TICKET NUMBER'
+        }
+        else{
+            document.getElementById('show').innerHTML='VALID HALL TICKET NUMBER'
+        }}
+</script>
+</html>

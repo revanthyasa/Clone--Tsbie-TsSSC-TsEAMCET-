@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Memo Download</title>
+    <style>
+        td{
+            color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-left: 25%;margin-right: 25%;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div style="color:white;background-color: darkcyan;">
+            <h2 align="center">Telangana State Board of Intermediate Education</h2>
+            <h3 align="center">Government of Telangana</h3>
+        </div><hr style="height: 3px;background-color: orange;"/>
+        <div style="color:green;background-color: rgb(149, 237, 15);">
+            <h2 align="center">RESULTS MEMO DOWNLOAD</h2>
+        </div>
+        <table cellspacing="20px">
+            <tr>
+                <td>RESULTS YEAR:</td>
+                <td>
+                    <select>
+                        <option>2023</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>YEAR:</td>
+                <td><input type="radio" name="year" checked="checked" /><label>First Year</label><input type="radio" name="year"/><label>Second Year</label></td>
+            </tr>
+            <tr>
+                <td>CATEGORY:</td>
+                <td><input type="radio" name="cat" checked="checked"/><label>General</label><input type="radio" name="cat"/><label>Vocational</label><input type="radio" name="cat"/><label>General Bridge Course</label><input type="radio" name="cat"/><label>Vocational Bridge Course</label></td>
+            </tr>
+            <tr>
+                <td>EXAMINATION TYPE:</td>
+                <td><input type="radio" checked="checked"/><label>IPE</label></td>
+            </tr>
+            <tr>
+                <td>HALL TICKET NO:</td>
+                <td><input type="text" style="height: 40px;" placeholder="Enter hall ticket number here" id="hall"/></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><button id='hall' style="border-radius: 5px;color: azure;background-color: darkseagreen;height:30px" onclick="hallvalidate()">GET MEMO</button><br><p id="tick" style="color:red"></p></td>
+            </tr>
+        </table>
+        <h4 style="color:red;text-decoration: underline;" align="center">Note:If any student is unable to download the memo,please contact ASR Help Desk @ 040-934610037079 or raise the grievance in our website</h4>
+        <h3 style="background-color: grey;" align="center">Design and Developed by: ASR Group</h3>
+    </div>
+    
+</body>
+<script>
+    function hallvalidate(){
+        var f=document.getElementById("hall").value
+        var m=/^232310\d{4}$/
+        if (m.test(f)){
+            document.getElementById('tick').innerHTML='VALID HALL TICKET NUMBER'
+        }
+        else{
+            document.getElementById('tick').innerHTML='INVALID HALL TICKET NUMBER'
+        }
+        }
+</script>
+</html>

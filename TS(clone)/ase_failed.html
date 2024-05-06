@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .upper_part{
+    height:120px;
+    background-color:#e1c79b ;
+    padding-right:100px
+    }
+
+    .fonting{
+    color: #4b72a5;
+    font-family: Arial Black;
+    font-size: large;
+    text-align: center;
+    }
+    .lower_part{
+    border-width: 4px;
+    border-style: Solid;
+    border-color: #B5C7DE;
+    background-color: #EFF3FB;
+    text-align: center;
+    border-spacing: 15px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    }
+
+    </style>
+</head>
+<body>
+        <table align="center" class="upper_part" style='box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/4/44/Emblem_of_Telangana.png" style="width: 120px;height:120px;"></td>
+            <td class="fonting">DIRECTORATE OF GOVERNMENT EXAMINATIONS :: TELANGANA STATE<br>
+                S.S.C. ADMISSION (2021 - 22)<br>
+                (Popularly Known as SSC Board)</td>
+        </table>
+        <table  class="lower_part" align="center" style="border-spacing: 30px;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <tr><td colspan="2" style="background-color: #4b72a5; color: white;">LOGIN</td></tr>
+            <tr><td>Enter User Name </td><td><input style="height: 20px;" id="usrname"></td></tr>
+            <tr><td>Enter Password </td><td><input type="password" style="height: 20px;" id="pass"></td></tr>
+            <tr><td colspan="2"><button style="width: 100px; height: 30px;" onclick="failed()">Login</button><p style="color:red" id="show"></p></td></tr>
+            <tr><td colspan="2"><a href="notting\ hill.2jpg.jpg">FORGOT PASSWORD</a></td></tr>
+        </table>
+        <p style="background-color: #4b72a5; color: white;text-align: center;">© Copyright ASR SSC - 2021. All Rights Reserved.</p>
+</body>
+<script>
+    function failed() {
+  // Get the values of the username and password fields.
+  var n = document.getElementById('usrname').value;
+  var p = document.getElementById('pass').value;
+
+  // Check if the username is empty.
+  if (n == '') {
+    // Display an error message.
+    document.getElementById('show').innerHTML = 'Please enter your Username properly';
+
+    // Return false to prevent the user from submitting the form.
+    return false;
+  }
+
+  // Check if the username does not match the required format.
+  var t = /^[\w]{1,16}@cbit_iwt$/;
+  if (!t.test(n)) {
+    // Display an error message.
+    document.getElementById('show').innerHTML = 'Please enter a valid username';
+
+    // Return false to prevent the user from submitting the form.
+    return false;
+  }
+
+  // Check if the password field is empty.
+  if (p == '') {
+    // Display an error message.
+    document.getElementById('show').innerHTML = 'Please enter your password';
+
+    // Return false to prevent the user from submitting the form.
+    return false;
+  }
+  else{
+    document.getElementById('show').innerHTML = '';
+
+  }
+  document.location.assign('ssc main.html')
+
+  // The username and password are valid, so do nothing.
+}
+</script>
+</html>
